@@ -5,7 +5,6 @@ Button[] back;
 //principalMenu
 Button play;
 Button options;
-Button missions;
 Button exit;
 Button left;
 Button right;
@@ -76,8 +75,7 @@ void alocateMenu()
   
   //principalMenu
   play = new Button(100,115,200,80);
-  options = new Button(100,240,350,80);
-  missions = new Button(100,360,410,70);
+  options = new Button(100,240,350,80);  
   exit = new Button(100,480,200,70);
   left = new Button(700,500,40,40,loadImage("images/player/menu/left.png"));
   right = new Button(1030,500,40,40,loadImage("images/player/menu/right.png"));

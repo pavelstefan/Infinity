@@ -58,6 +58,6 @@ void createLevels()
    level[16] = new Level(7,10);
    level[17] = new Level(8,12);
    level[18] = new Level(9,14);
-   level[19] = new Level(10,16); 
+   level[19] = new Level(1,6); 
       
 }

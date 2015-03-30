@@ -130,15 +130,7 @@ void findMenu()
         image(optionsBg,0,0);
         showOptions();
         return;
-    }
-    
-    if(CurrentMenu == "missions")
-    {
-        drawStoryBackground();
-        imageMode(NORMAL);
-        image(missionsBg,0,0);
-        return;
-    }
+    }   
     
     println("meniul " + CurrentMenu + " nu exista");
 }

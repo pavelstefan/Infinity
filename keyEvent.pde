@@ -1,6 +1,12 @@
 void keyPressed()
 { 
-  if(key == '\n' && (CurrentMenu != "story" && CurrentMenu != "NewChapter"))
+  if(key == '\n' && (CurrentMenu == "over" || CurrentMenu == "gameFinished"))
+  {
+     CurrentMenu = "PrincipalMenu";
+     return;
+  }
+  
+  if(key == '\n' && CurrentMenu == "PrincipalMenu")
   {
     robot.mouseMove(width/2, height - player.playerImage.height/4);
     CurrentMenu = "story";    

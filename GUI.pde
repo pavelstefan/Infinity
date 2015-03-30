@@ -51,12 +51,7 @@ void mouseClicked()
      if(options.over())
      {
        CurrentMenu = "options";
-     }
-     
-     if(missions.over())
-     {
-       CurrentMenu = "missions";
-     }
+     }   
    
      if(left.over())
      {
@@ -131,14 +126,5 @@ void mouseClicked()
           CurrentMenu = "PrincipalMenu"; 
        }
        return;
-   }
-  
-   if(CurrentMenu == "missions")
-   {
-      if(back[0].over())
-      {
-         CurrentMenu = "PrincipalMenu"; 
-      }
-      return;
-   } 
+   }    
 }

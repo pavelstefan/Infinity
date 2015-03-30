@@ -14,7 +14,6 @@ void story()
  // println("nrEnemyBullets: " + nrEnemyBullets);
   
   drawStoryBackground();
-  
   newLevel();
   
   if(chapter)
@@ -49,14 +48,18 @@ void story()
   drawStoryEnemy();
   player.drawPlayer();
   enemyColision();
-  storyStarted = true;
+  storyStarted = true;  
 }
 
 void newLevel()
 {  
    if(enemyDeath != enemyNumber)
      return; 
-     
+   if(currentLevel == 19)
+   {
+     CurrentMenu = "gameFinished";
+     return;
+   } 
    chapter = true;  
    
    nrEnemyBullets = 0;

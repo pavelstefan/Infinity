@@ -147,7 +147,8 @@ class Enemy
 void alocateEnemy()
 {
     PImage eI = loadImage("images/enemy/enemy1.png");
-    PImage bI = loadImage("images/enemy/enemyBullet.png");
+    PImage bI = loadImage("images/enemy/enemyBullet.png");    
+    currentLevel = 0;
     enemyNumber = level[currentLevel].getMonsters();
     enemy = new Enemy[16];
     for(int i = 0; i < enemyNumber; i++)
